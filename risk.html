@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Why it matters — ClaimFacts</title>
+<meta name="description" content="What a restricted ad account or a pulled listing costs, and how that compares to a month of claim review.">
+<meta property="og:title" content="Why it matters — ClaimFacts">
+<meta property="og:description" content="What a restricted ad account or a pulled listing costs, and how that compares to a month of claim review.">
+<meta name="theme-color" content="#F3EFE7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="config.js"></script>
+</head>
+<body data-page="risk">
+<nav class="bar">
+  <div class="wrap">
+    <a class="mark" href="index.html">ClaimFacts</a>
+    <div class="navlinks">
+      <a class="txt" data-nav="risk"     href="risk.html">Why it matters</a>
+      <a class="txt" data-nav="findings" href="findings.html">What we find</a>
+      <a class="txt" data-nav="pricing"  href="pricing.html">Pricing</a>
+      <a class="txt" data-nav="about"    href="about.html">Lead reviewer</a>
+      <a class="txt" data-nav="faq"      href="faq.html">FAQ</a>
+      <a class="btn" href="contact.html">Free review</a>
+    </div>
+  </div>
+</nav>
+
+<header class="pagehead">
+  <div class="wrap">
+    <span class="kicker">Why it matters</span>
+    <h1>The bill almost never arrives as a fine.</h1>
+    <p class="lede">Regulators acting on a small brand is the rare outcome. The common ones are faster, quieter, and land on whichever part of your business you can least afford to pause.</p>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="twocol">
+      <div>
+        <h3>Your ads stop running</h3>
+        <p>Meta and Google reject health claims automatically, and repeat flags escalate to the account itself. Appeals take weeks. Every day the account is down, your acquisition is zero and your costs aren't.</p>
+      </div>
+      <div>
+        <h3>Your listings vanish</h3>
+        <p>Amazon suppresses supplement listings with disease claims, usually without warning and usually mid sales cycle. Getting reinstated needs documentation nobody assembles in advance.</p>
+      </div>
+      <div>
+        <h3>The claim changes what you're selling</h3>
+        <p>Say your product treats or prevents a disease and it is legally an unapproved drug. That's the thread FDA warning letters pull, and the one plaintiffs' firms read those letters looking for.</p>
+      </div>
+      <div>
+        <h3>Coaching starts to look like treatment</h3>
+        <p>If you sell programs, the FTC isn't your only exposure. Promising to heal a named condition can read as clinical practice to a state licensing board — and that complaint usually comes from a competitor or an unhappy client, not a regulator.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tinted">
+  <div class="wrap">
+    <h2>What two weeks offline costs</h2>
+    <p class="lede">Restrictions typically take one to three weeks to sort out. Put your own number in.</p>
+
+    <div class="calc">
+      <div class="calcin">
+        <label for="spend">What you spend on ads per day</label>
+        <div class="spendwrap">
+          <b>$</b><input id="spend" type="number" value="2000" min="0" step="100" aria-label="Daily ad spend in dollars">
+        </div>
+        <input type="range" id="spendrange" min="100" max="15000" step="100" value="2000" aria-label="Daily ad spend slider">
+        <p class="calcnote">Assumes a two-week restriction and that paused spend means paused revenue. Change it to whatever is honest for your account.</p>
+      </div>
+
+      <div class="ledger">
+        <div class="ledgerrow bad">
+          <div class="lab">Lost to a two-week restriction<span class="sub">your daily spend, times fourteen</span></div>
+          <div class="val" id="v-loss">$28,000</div>
+        </div>
+        <div class="ledgerrow good">
+          <div class="lab">One month of <span id="v-tiername">Scale</span><span class="sub">the tier that fits your spend</span></div>
+          <div class="val" id="v-month">$7,000</div>
+        </div>
+        <div class="ledgerrow">
+          <div class="lab">Days of ad spend that cover a month<span class="sub">where it breaks even</span></div>
+          <div class="val" id="v-days">3.5</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <h2>Why one cleanup isn't enough</h2>
+    <p>Fixing what's live today fixes today. Next week someone on your team writes four new ad variants on a deadline. The month after, a new product ships with new packaging. An affiliate posts something nobody looked at. Your agency rewrites the landing page for Q4.</p>
+    <p>Every one of those puts the problem back, because the person writing is optimizing for click-through and has never read an FTC guidance document. That's the argument for ongoing review — and the reason we treat a one-time audit as a starting point rather than a solution.</p>
+  </div>
+</section>
+
+<div class="rail">
+  <div class="wrap">
+    <p>Curious what's on your page right now?<span class="sub">Send one and we'll review it free.</span></p>
+    <a class="btn" href="contact.html">Send a page</a>
+  </div>
+</div>
+<footer class="foot">
+  <div class="inner">
+    <p class="flinks">
+      <a href="pricing.html">Pricing</a>
+      <a href="about.html">Lead reviewer</a>
+      <a href="faq.html">FAQ</a>
+      <a href="agreement.html">Service agreement</a>
+      <a id="footmail" href="#">Email</a>
+    </p>
+    <p class="legal">ClaimFacts provides scientific and regulatory review of marketing claims. Reviews are conducted by Haris Hillery, M.S., Founder and Lead Reviewer. It is not a law firm and does not provide legal advice or legal representation. Reviews interpret published FTC guidance, FDA labeling regulations, and platform policy; they do not constitute an opinion on legal liability and do not create an attorney-client relationship. Consult qualified counsel before relying on any review for regulated filings, agency correspondence, or litigation.</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
