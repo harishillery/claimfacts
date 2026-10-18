@@ -9,6 +9,11 @@ window.CLAIMFACTS = {
   // Where booking requests go.
   email: "harishillery@gmail.com",
 
+  // Kit landing page for the newsletter. Every "Subscribe" button on the site
+  // opens this page. Leave blank and the buttons email a subscribe request
+  // to the address above instead.
+  kitLandingPage: "https://haris-23.kit.com/119349074f",
+
   // Optional. Paste a Formspree endpoint to have submissions land in your
   // inbox silently. Leave blank and the form opens the visitor's email app
   // with everything pre-filled — works today, no account needed.

@@ -121,6 +121,17 @@
     if(link){ a.href = link; a.target = '_blank'; a.rel = 'noopener'; }
   });
 
+  /* newsletter signup buttons -> Kit landing page */
+  (function(){
+    var url = String(CFG.kitLandingPage || '').trim();
+    var fallback = 'mailto:' + (CFG.email || '') + '?subject=' +
+      encodeURIComponent('Subscribe me to The Substantiation File');
+    document.querySelectorAll('[data-signup]').forEach(function(a){
+      if(url){ a.href = url; a.target = '_blank'; a.rel = 'noopener'; }
+      else { a.href = fallback; }
+    });
+  })();
+
   /* footer email */
   (function(){
     var fm = $('footmail');
