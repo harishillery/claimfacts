@@ -7,11 +7,23 @@
 window.CLAIMFACTS = {
 
   // Where booking requests go.
-  email: "harishillery@gmail.com",
+  email: "haris@claimfacts.co",
 
   // Kit landing page for the newsletter. Every "Subscribe" button on the site
   // opens this page. Leave blank and the buttons email a subscribe request
   // to the address above instead.
+  // Social profiles for the footer icons. Paste the full profile URL for each
+  // account you want shown (e.g. "https://www.instagram.com/claimfacts").
+  // Any left blank is simply not shown.
+  social: {
+    instagram: "",
+    tiktok:    "",
+    x:         "",
+    bluesky:   "",
+    substack:  "",
+    linkedin:  ""
+  },
+
   kitLandingPage: "https://haris-23.kit.com/119349074f",
 
   // Optional. Paste a Formspree endpoint to have submissions land in your

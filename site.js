@@ -161,6 +161,26 @@
     });
   })();
 
+  /* footer social icons (icons from the Simple Icons library) */
+  (function(){
+    var box = $('social'), links = CFG.social || {};
+    if(!box) return;
+    var NAMES = {instagram:'Instagram', tiktok:'TikTok', x:'X', bluesky:'Bluesky', substack:'Substack', linkedin:'LinkedIn'};
+    Object.keys(NAMES).forEach(function(k){
+      var url = String(links[k] || '').trim();
+      if(!url) return;
+      var a = document.createElement('a');
+      a.href = url; a.target = '_blank'; a.rel = 'noopener';
+      a.setAttribute('aria-label', 'ClaimFacts on ' + NAMES[k]);
+      var img = document.createElement('img');
+      img.src = 'https://cdn.jsdelivr.net/npm/simple-icons@13.21.0/icons/' + k + '.svg';
+      img.alt = ''; img.width = 20; img.height = 20;
+      a.appendChild(img);
+      box.appendChild(a);
+    });
+    if(!box.children.length) box.style.display = 'none';
+  })();
+
   /* footer email */
   (function(){
     var fm = $('footmail');

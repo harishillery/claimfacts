@@ -304,3 +304,7 @@ footer.foot .legal{font-size:14px;line-height:1.55;max-width:78ch;margin:0}
 .policy li{margin-bottom:8px}
 .policy a{text-underline-offset:3px}
 .nlnote a{color:inherit}
+footer.foot .social{display:flex;gap:16px;margin:0 0 16px}
+footer.foot .social a{display:inline-flex;opacity:.62;transition:opacity .15s}
+footer.foot .social a:hover,footer.foot .social a:focus-visible{opacity:1}
+footer.foot .social img{width:20px;height:20px}
