@@ -299,3 +299,8 @@ footer.foot .legal{font-size:14px;line-height:1.55;max-width:78ch;margin:0}
 .nlpoints li{margin-bottom:8px}
 .nlpoints b{font-weight:600}
 .nlnote{max-width:56ch}
+.policy h2{font-size:24px;margin:38px 0 12px}
+.policy ul{padding-left:22px;margin:0 0 18px}
+.policy li{margin-bottom:8px}
+.policy a{text-underline-offset:3px}
+.nlnote a{color:inherit}
