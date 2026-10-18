@@ -18,10 +18,11 @@ window.CLAIMFACTS = {
   social: {
     instagram: "",
     tiktok:    "",
-    x:         "",
-    bluesky:   "",
-    substack:  "",
-    linkedin:  ""
+    threads:   "",
+    x:         "https://x.com/ClaimFactsco",
+    bluesky:   "https://bsky.app/profile/claimfacts.bsky.social",
+    substack:  "https://substack.com/@claimfacts",
+    linkedin:  "https://www.linkedin.com/company/claimfacts/"
   },
 
   kitLandingPage: "https://haris-23.kit.com/119349074f",

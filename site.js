@@ -165,7 +165,7 @@
   (function(){
     var box = $('social'), links = CFG.social || {};
     if(!box) return;
-    var NAMES = {instagram:'Instagram', tiktok:'TikTok', x:'X', bluesky:'Bluesky', substack:'Substack', linkedin:'LinkedIn'};
+    var NAMES = {instagram:'Instagram', tiktok:'TikTok', threads:'Threads', x:'X', bluesky:'Bluesky', substack:'Substack', linkedin:'LinkedIn'};
     Object.keys(NAMES).forEach(function(k){
       var url = String(links[k] || '').trim();
       if(!url) return;
