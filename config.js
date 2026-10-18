@@ -16,7 +16,7 @@ window.CLAIMFACTS = {
   // account you want shown (e.g. "https://www.instagram.com/claimfacts").
   // Any left blank is simply not shown.
   social: {
-    instagram: "",
+    instagram: "https://www.instagram.com/claim.facts/",
     tiktok:    "",
     threads:   "https://www.threads.com/@claim.facts",
     x:         "https://x.com/ClaimFactsco",
