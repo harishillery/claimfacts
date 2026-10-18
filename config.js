@@ -18,7 +18,7 @@ window.CLAIMFACTS = {
   social: {
     instagram: "",
     tiktok:    "",
-    threads:   "",
+    threads:   "https://www.threads.com/@claim.facts",
     x:         "https://x.com/ClaimFactsco",
     bluesky:   "https://bsky.app/profile/claimfacts.bsky.social",
     substack:  "https://substack.com/@claimfacts",
