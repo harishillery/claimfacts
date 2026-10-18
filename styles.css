@@ -294,3 +294,8 @@ footer.foot .legal{font-size:14px;line-height:1.55;max-width:78ch;margin:0}
 .claimline .cannot{border-left:2px solid var(--critical)}
 .claimline .cannot b{color:var(--critical)}
 @media(max-width:560px){ .nlform .btn{width:100%} }
+.nlkicker{text-transform:uppercase;letter-spacing:.08em;color:var(--major)}
+.nlpoints{margin:0 0 28px;padding-left:22px;font-size:18px}
+.nlpoints li{margin-bottom:8px}
+.nlpoints b{font-weight:600}
+.nlnote{max-width:56ch}

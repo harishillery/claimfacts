@@ -132,6 +132,35 @@
     });
   })();
 
+  /* inline newsletter form (posts to Kit) */
+  (function(){
+    var form = $('nlform');
+    if(!form) return;
+    var note = $('nlnote'), base = note ? note.textContent : '';
+    form.addEventListener('submit', function(e){
+      var email = form.email_address.value.trim();
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        e.preventDefault();
+        note.textContent = 'That email address does not look complete.';
+        form.email_address.focus();
+        return;
+      }
+      if(!window.fetch) return;            /* old browser: plain form post */
+      e.preventDefault();
+      var btn = form.querySelector('button');
+      btn.disabled = true;
+      note.textContent = 'Subscribing\u2026';
+      fetch(form.action, { method:'POST', body:new FormData(form), headers:{'Accept':'application/json'} })
+        .then(function(r){ if(!r.ok) throw new Error(); })
+        .then(function(){
+          form.reset();
+          note.textContent = 'Almost done. Check your inbox to confirm, and Monday\u2019s issue is yours.';
+        })
+        .catch(function(){ form.submit(); })   /* fall back to Kit's own confirmation page */
+        .then(function(){ btn.disabled = false; });
+    });
+  })();
+
   /* footer email */
   (function(){
     var fm = $('footmail');
