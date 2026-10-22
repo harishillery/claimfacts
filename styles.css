@@ -303,6 +303,10 @@ footer.foot .legal{font-size:14px;line-height:1.55;max-width:78ch;margin:0}
 .policy ul{padding-left:22px;margin:0 0 18px}
 .policy li{margin-bottom:8px}
 .policy a{text-underline-offset:3px}
+.policy .tablewrap{overflow-x:auto;margin:6px 0 20px}
+.policy table{border-collapse:collapse;width:100%;font-size:16px;line-height:1.5}
+.policy th,.policy td{text-align:left;vertical-align:top;padding:10px 12px 10px 0;border-bottom:1px solid var(--rule)}
+.policy th{font-family:var(--sans);font-weight:600;font-size:13px;letter-spacing:.03em;color:var(--ink-soft)}
 .nlnote a{color:inherit}
 footer.foot .social{display:flex;gap:16px;margin:0 0 16px}
 footer.foot .social a{display:inline-flex;opacity:.62;transition:opacity .15s}
